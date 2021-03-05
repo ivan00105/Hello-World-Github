@@ -2,13 +2,16 @@ name: CI
 
 on:
         push:
-                branches: [ master ]
-                pull_request:
+                 branches:
+                        [ master ]
+                 pull_request:
                         branches:[ master ]
 
         workflow_dispatch:
 
-                jobs:
+                
+                
+                 jobs:
                         build:
                                 runs-on: ubuntu-latest
 
@@ -20,8 +23,9 @@ on:
                   run: echo Hello, world!
 
                 - name: Run a multi-line script
-                  run:
+                 
+                        run:
                           echo Add other actions to build,
-                  echo test, and deploy your project.
+                          echo test, and deploy your project.
 
-                     
+                  
